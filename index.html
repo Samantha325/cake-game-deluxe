@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製作美味蛋糕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>製作美味蛋糕</h1>
+    <div class="game-container">
+        <div class="recipe-panel">
+            <h2>烘焙食譜</h2>
+            <div class="recipe-status">
+                <p>目前需要：<span id="currentIngredient" class="highlight">等待開始...</span></p>
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <p>完成度：<span id="progress">0</span>%</p>
+            </div>
+            <div class="score-panel">
+                <div class="score-box">
+                    <span class="score-label">分數</span>
+                    <span id="score" class="score-value">0</span>
+                </div>
+                <div class="streak-box">
+                    <span class="streak-label">連續成功</span>
+                    <span id="streak" class="streak-value">0</span>
+                </div>
+            </div>
+            <button id="startGame" class="fancy-button">開始遊戲</button>
+        </div>
+        <div class="game-grid" id="gameGrid">
+            <!-- Ingredients will be dynamically added here -->
+        </div>
+        <div class="cake-display">
+            <div class="cake-stage">
+                <img id="cakeImage" src="https://cdn-icons-png.flaticon.com/512/992/992771.png" alt="蛋糕" />
+                <div id="sparkle" class="sparkle"></div>
+            </div>
+            <div class="cake-info">
+                <h3>美味蛋糕</h3>
+                <p id="cakeStatus">準備開始製作...</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
